@@ -150,7 +150,7 @@ export function StartScreen({ onPlay, highScore }: Props) {
               letterSpacing: "0.2em",
             }}
           >
-            VOID
+            APEX
           </h1>
           <h1
             className="text-6xl md:text-8xl font-black tracking-widest uppercase mb-8"
@@ -162,7 +162,7 @@ export function StartScreen({ onPlay, highScore }: Props) {
               letterSpacing: "0.2em",
             }}
           >
-            STRIKER
+            STRIKE
           </h1>
         </motion.div>
 
