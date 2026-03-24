@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+    --background: 0.12 0.008 240;
+    --foreground: 0.98 0 0;
+    --card: 0.16 0.01 240;
+    --card-foreground: 0.98 0 0;
+    --popover: 0.16 0.01 240;
+    --popover-foreground: 0.98 0 0;
+    --primary: 0.72 0.18 210;
+    --primary-foreground: 0.08 0 0;
+    --secondary: 0.2 0.012 240;
+    --secondary-foreground: 0.85 0 0;
+    --muted: 0.18 0.01 240;
+    --muted-foreground: 0.55 0.015 240;
+    --accent: 0.72 0.18 210;
+    --accent-foreground: 0.08 0 0;
+    --destructive: 0.62 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+    --border: 0.25 0.015 240;
+    --input: 0.22 0.012 240;
+    --ring: 0.72 0.18 210;
+    --chart-1: 0.62 0.22 25;
+    --chart-2: 0.72 0.19 55;
+    --chart-3: 0.55 0.24 295;
+    --chart-4: 0.72 0.18 210;
+    --chart-5: 0.65 0.2 160;
+    --sidebar: 0.14 0.01 240;
+    --sidebar-foreground: 0.98 0 0;
+    --sidebar-primary: 0.72 0.18 210;
+    --sidebar-primary-foreground: 0.08 0 0;
+    --sidebar-accent: 0.18 0.01 240;
+    --sidebar-accent-foreground: 0.85 0 0;
+    --sidebar-border: 0.25 0.015 240;
+    --sidebar-ring: 0.72 0.18 210;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Bricolage Grotesque", "Inter", sans-serif;
+    overflow: hidden;
+  }
+}
+
+.font-mono-game {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+}
+
+.glow-cyan {
+  text-shadow: 0 0 20px oklch(0.72 0.18 210 / 0.8), 0 0 40px
+    oklch(0.72 0.18 210 / 0.4);
+}
+
+.glow-btn {
+  box-shadow: 0 0 20px oklch(0.72 0.18 210 / 0.4), 0 0 40px
+    oklch(0.72 0.18 210 / 0.2);
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 30px oklch(0.72 0.18 210 / 0.7), 0 0 60px
+    oklch(0.72 0.18 210 / 0.35);
+}
